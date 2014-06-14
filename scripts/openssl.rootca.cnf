@@ -1,0 +1,20 @@
+[ req ]
+prompt = no
+default_bits = 2048
+default_keyfile = dash-rootca.key
+distinguished_name = req_distinguished_name
+
+[ req_distinguished_name ]
+CN = "Dash Compiler Performance Tracker Root CA"
+
+[ dash_server ]
+basicConstraints = CA:false
+nsCertType = server
+keyUsage = digitalSignature,keyEncipherment
+extendedKeyUsage = serverAuth
+
+[ dash_client ]
+basicConstraints = CA:false
+nsCertType = client
+keyUsage = digitalSignature,keyEncipherment
+extendedKeyUsage = clientAuth

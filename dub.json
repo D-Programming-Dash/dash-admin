@@ -1,0 +1,9 @@
+{
+    "name": "dash-admin",
+    "description": "Administrative client for the Dash D compiler performance tracker.",
+    "copyright": "Copyright © 2014, David Nadlinger",
+    "authors": ["klickverbot"],
+    "dependencies": {
+        "thrift": "~master"
+    }
+}
